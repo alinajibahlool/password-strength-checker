@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Ali Naji Bahlool" />
+  <meta name="description" content="Password Strength Checker website created by Ali Naji Bahlool." />
+  <title>Password Strength Checker | Ali Naji Bahlool</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <div class="brand-chip">Created by Ali Naji Bahlool</div>
+      <h1>Password Strength Checker</h1>
+      <p class="subtitle">
+        A simple cybersecurity website that checks password strength and gives practical advice to make passwords stronger.
+      </p>
+    </header>
+
+    <main class="card">
+      <label for="password">Enter your password</label>
+      <div class="input-wrap">
+        <input type="password" id="password" placeholder="Type your password here" />
+        <button id="toggleBtn" type="button">Show</button>
+      </div>
+
+      <button class="check-btn" onclick="checkPassword()">Check Password</button>
+
+      <div class="meter-wrap">
+        <div id="strengthBar" class="strength-bar"></div>
+      </div>
+
+      <div id="result" class="result">Strength: Waiting for input</div>
+
+      <section class="panel">
+        <h2>Checks</h2>
+        <ul id="checksList"></ul>
+      </section>
+
+      <section class="panel">
+        <h2>Feedback</h2>
+        <ul id="feedbackList"></ul>
+      </section>
+
+      <section class="panel">
+        <h2>Suggestions</h2>
+        <ul id="suggestionsList"></ul>
+      </section>
+
+      <section class="panel">
+        <h2>Stronger password examples</h2>
+        <ul id="generatedPasswords"></ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Ali Naji Bahlool. All rights reserved.</p>
+      <p class="footer-note">Designed and developed by Ali Naji Bahlool</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
